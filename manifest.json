@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Choqok",
+    "version": "1.0",
+    "description": "A less time consuming version of Twitter. By now it removes replies.",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.twitter.com/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "images/logo.png"
+    }
+}
